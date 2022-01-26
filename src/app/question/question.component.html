@@ -1,0 +1,53 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="d-flex justify-content-between p-3">
+      <div class="image">
+        <img src="https://img.icons8.com/color/96/000000/angularjs.png" alt="logo" width="70">
+      </div>
+      <div class="quiz-header">
+        <h4>Angular & TypeScript Quiz!</h4>
+        <span>Welcome User</span>
+      </div>
+    </div>
+    <ng-container *ngIf="!isQuizFinished">
+      <div class="d-flex justify-content-around py-3">
+        <div class="question-remain">
+          <span>Question {{currentQuestion + 1}} of {{questionList.length}}</span>
+        </div>
+      </div>
+      <div class="progress mb-3" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="question">
+        <div class="card">
+          <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+        </div>
+      </div>
+      <div class="options">
+        <ol #selected >
+          <li (click)="chooseAnswer(option)" *ngFor="let option of questionList[currentQuestion]?.options">
+            <div appChangeBg [isCorrect]="option.correct" class="card">
+              {{option.text}}
+            </div>
+          </li>
+        </ol>
+
+      </div>
+      <div class="d-flex justify-content-between">
+        <button class="btn" routerLink="/welcome"><i class="fa fa-home fa-3x text-primary" aria-hidden="true"></i></button>
+        <button [disabled]="flag===false"  class="btn" (click)="nextQuestion()"><i class="fa fa-chevron-right text-primary fa-3x" aria-hidden="true"></i></button>
+      </div>
+
+    </ng-container>
+    <ng-container *ngIf="isQuizFinished">
+      <div class="row d-flex justify-content-between">
+        <img style="width: 20%;" class="img-fluid col-sm-12 mx-auto" src="https://img.icons8.com/color/96/000000/angularjs.png" alt="">
+        <div class="result text-center col-md-6 col-sm-12">
+          <h3>Your result:</h3>
+          <p>correct: {{correctAnswer}}%</p>
+          <p>incorrect: {{incorrectAnswer}}%</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
