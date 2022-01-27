@@ -1,0 +1,4 @@
+button.btn {
+  background-color: var(--bs-gray-900);
+  border: none;
+}

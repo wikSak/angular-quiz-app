@@ -1,8 +1,12 @@
-<nav class="navbar navbar-light bg-primary">
+<nav class="navbar">
   <div class="container-fluid">
     <a class="navbar-brand text-bold" href="#">
-      <img src="https://img.icons8.com/color/96/000000/angularjs.png" alt="logo" width="50">
-      <span class="text-uppercase text-white">Angular Quiz</span>
+      <img src="https://ltcondon.github.io/GOT-Battle-Royale/assets/images/game-of-thrones-logo-large.png" alt="logo" width="50">
     </a>
+    <select #selLang (change)="translateLanguageTo(selLang.value)">
+      <option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</option>
+    </select>
+
   </div>
+
 </nav>

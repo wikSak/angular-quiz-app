@@ -1,13 +1,12 @@
-<div class="container bg-light py-5">
-  <h1 class="display-5 fw-bold">Welcome to Quiz App</h1>
-  <p class="col-md-8 fz-4">This quiz will contains total 9 questions. Each of them have only one correct answer.</p>
-  <h4>Rules:</h4>
+<div class="container bg-light py-5 mt-5">
+  <h1 class="display-5 fw-bold">{{'quiz.welcome' | translate}}</h1>
+  <p class="col-md-8 fz-4">{{'quiz.description' | translate}}</p>
+  <h4>{{'quiz.rules' | translate}}</h4>
   <ol>
-    <li>Correct answ give 10 points</li>
-    <li>incorrect -10</li>
-    <li>you will have 10s to answer</li>
-    <li>refreshing the page will reset the quiz</li>
+    <li>{{'quiz.ruleOne' | translate}}</li>
+    <li>{{'quiz.ruleTwo' | translate}}</li>
+    <li>{{'quiz.ruleThree' | translate}}</li>
   </ol>
-  <h1 style="text-align: center;">All the best</h1>
-   <button class="btn btn-primary btn-lg" routerLink="/question">Start the Quiz</button>
+
+   <button class="btn btn-primary btn-lg" routerLink="/question">{{'quiz.start' | translate}}</button>
 </div>

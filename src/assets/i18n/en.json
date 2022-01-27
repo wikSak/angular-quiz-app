@@ -1,0 +1,203 @@
+{
+  "quiz": {
+    "header": "Game of Thrones quiz!",
+    "result": "Your result:",
+    "correct": "Correct answers:",
+    "incorrect": "Incorrect answers:",
+    "welcome": "Welcome to Quiz",
+    "description": "This quiz will contain questions about Game of Thrones.",
+    "rules": "Rules:",
+    "ruleOne": "You must answer question before moving on to the next one.",
+    "ruleTwo": "You can choose only one answer.",
+    "ruleThree": "Refreshing the page will reset the quiz",
+    "start": "Start the Quiz"
+  },
+  "question": {
+    "text": "Question",
+    "of": "of"
+  },
+  "result": {
+    "good":"Nice job",
+    "bad": "Try again",
+    "medium": "It could be better"
+  },
+  "questions": [
+    {
+      "questionText": "Who is the youngest of Ned Stark’s children?",
+      "options": [
+        {
+          "text": "Rickon",
+          "correct": true
+        },
+        {
+          "text": "Arya"
+        },
+        {
+          "text": "Bran"
+        },
+        {
+          "text": "Sansa"
+        }
+      ]
+    },
+    {
+      "questionText": "Which of the following is not a name of one of Daenerys Targaryen’s dragons?",
+      "options": [
+        {
+          "text": "Viserion"
+        },
+        {
+          "text": "Drogon"
+        },
+        {
+          "text": "Rhaegal"
+        },
+        {
+          "text": "Balerion",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "questionText": "Jamie Lannister has a golden ___.",
+      "options": [
+        {
+          "text": "shield"
+        },
+        {
+          "text": "hand",
+          "correct": true
+        },
+        {
+          "text": "leg"
+        },
+        {
+          "text": "walking stick"
+        }
+      ]
+    },
+    {
+      "questionText": "Who is Jon Snow’s mother?",
+      "options": [
+        {
+          "text": "Cersei Lannister"
+        },
+        {
+          "text": "Lysa Arryn"
+        },
+        {
+          "text": "Lyanna Stark",
+          "correct": true
+        },
+        {
+          "text": "an unnamed prostitute"
+        }
+      ]
+    },
+    {
+      "questionText": "Who received immediate blame for the death of King Renly?",
+      "options": [
+        {
+          "text": "Brienne of Tarth",
+          "correct": true
+        },
+        {
+          "text": "Arya Stark"
+        },
+        {
+          "text": "Sir Loras"
+        },
+        {
+          "text": "Katelyn Stark"
+        }
+      ]
+    },
+    {
+      "questionText": "What was the name of the khal of the Dothraki that Daenerys marries?",
+      "options": [
+        {
+          "text": "Loras Tyrell"
+        },
+        {
+          "text": "Renly Baratheon"
+        },
+        {
+          "text": "Drogo",
+          "correct": true
+        },
+        {
+          "text": "Gregor Clegane"
+        }
+      ]
+    },
+    {
+      "questionText": "What does Daenerys say when commanding her dragons to breathe fire?",
+      "options": [
+        {
+          "text": "Valahd"
+        },
+        {
+          "text": "Dracarys",
+          "correct": true
+        },
+        {
+          "text": "Valar Morghulis"
+        },
+        {
+          "text": "Daracys"
+        }
+      ]
+    },
+    {
+      "questionText": "What was the name of Jon Snow's direwolf?",
+      "options": [
+        {
+          "text": "Ghost",
+          "correct": true
+        },
+        {
+          "text": "Lady"
+        },
+        {
+          "text": "Summer"
+        },
+        {
+          "text": "Nymeria"
+        }
+      ]
+    },
+    {
+      "questionText": "What is it that Jaqen H'ghar teaches Arya Stark?",
+      "options": [
+        {
+          "text": "How to be a Faceless Man",
+          "correct": true
+        },
+        {
+          "text": "The proper way to act like a lady"
+        },
+        {
+          "text": "The best way to train a direwolf"
+        }
+      ]
+    },
+    {
+      "questionText": "What does Bran Stark repeatedly dream of?",
+      "options": [
+        {
+          "text": "Direwolves"
+        },
+        {
+          "text": "A three-eyed raven",
+          "correct": true
+        },
+        {
+          "text": "White Walkers"
+        },
+        {
+          "text": "The Stark family crypt"
+        }
+      ]
+    }
+  ]
+}

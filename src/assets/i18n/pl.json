@@ -1,7 +1,29 @@
-{
+{ "quiz": {
+  "header": "Quiz o Grze o Tron!",
+  "result": "Twój wynik:",
+  "correct": "Prawidłowe odpowiedzi:",
+  "incorrect": "Niepoprawne odpowiedzi:",
+  "welcome": "Witam w Quizie",
+  "description": "Ten quiz będzie zawierał pytania dotyczące Gry o Tron.",
+  "rules": "Zasady:",
+  "ruleOne": "Musisz odpowiedzieć na pytanie, zanim przejdziesz do następnego.",
+  "ruleTwo": "Możesz wybrać tylko jedną odpowiedź.",
+  "ruleThree": "Odświeżenie strony spowoduje zresetowanie quizu",
+  "start": "Rozpocznij Quiz"
+
+},
+  "question": {
+    "text": "Pytanie",
+    "of": "z"
+  },
+  "result": {
+    "good":"Dobra robota",
+    "bad": "Spróbuj jeszcze raz",
+    "medium": "Mogło być lepiej"
+  },
   "questions": [
     {
-      "questionText": "Who is the youngest of Ned Stark’s children?",
+      "questionText": "Kto jest najmłodszym dzieckiem Neda Starka?",
       "options": [
         {
           "text": "Rickon",
@@ -19,7 +41,7 @@
       ]
     },
     {
-      "questionText": "Which of the following is not a name of one of Daenerys Targaryen’s dragons?",
+      "questionText": "Które z poniższych nie jest imieniem jednego ze smoków Daenerys Targaryen?",
       "options": [
         {
           "text": "Viserion"
@@ -37,25 +59,25 @@
       ]
     },
     {
-      "questionText": "Jamie Lannister has a golden ___.",
+      "questionText": "Jamie Lannister ma złotą ___.",
       "options": [
         {
-          "text": "tongue"
+          "text": "tarczę"
         },
         {
-          "text": "hand",
+          "text": "rękę",
           "correct": true
         },
         {
-          "text": "leg"
+          "text": "nogę"
         },
         {
-          "text": "sword"
+          "text": "laskę"
         }
       ]
     },
     {
-      "questionText": "Who is Jon Snow’s mother?",
+      "questionText": "Kim jest matka Johna Snowa?",
       "options": [
         {
           "text": "Cersei Lannister"
@@ -68,15 +90,15 @@
           "correct": true
         },
         {
-          "text": "an unnamed prostitute"
+          "text": "Nienazwana prostytutka"
         }
       ]
     },
     {
-      "questionText": "Who received immediate blame for the death of King Renly?",
+      "questionText": "Kto został natychmiast obwiniony za śmierć króla Renly'ego?",
       "options": [
         {
-          "text": "Brienne of Tarth",
+          "text": "Brienne z Tarthu",
           "correct": true
         },
         {
@@ -91,7 +113,7 @@
       ]
     },
     {
-      "questionText": "What was the name of the khal of the Dothraki that Daenerys marries?",
+      "questionText": "Jak nazywał się khal Dothraków, którego poślubiła Daenerys?",
       "options": [
         {
           "text": "Loras Tyrell"
@@ -109,7 +131,7 @@
       ]
     },
     {
-      "questionText": "What does Daenerys say when commanding her dragons to breathe fire?",
+      "questionText": "Co mówi Daenerys, gdy rozkazuje swoim smokom ziać ogniem?",
       "options": [
         {
           "text": "Valahd"
@@ -127,7 +149,7 @@
       ]
     },
     {
-      "questionText": "What was the name of Jon Snow's direwolf?",
+      "questionText": "Jak nazywał się wilkor Jona Snowa?",
       "options": [
         {
           "text": "Ghost",
@@ -145,35 +167,35 @@
       ]
     },
     {
-      "questionText": "What is it that Jaqen H'ghar teaches Arya Stark?",
+      "questionText": "Czego Jaqen H'ghar uczył Aryę Stark?",
       "options": [
         {
-          "text": "How to be a Faceless Man",
+          "text": "Jak być człowiekiem bez twarzy",
           "correct": true
         },
         {
-          "text": "The proper way to act like a lady"
+          "text": "Jak zachowywać się jak dama"
         },
         {
-          "text": "The best way to train a direwolf"
+          "text": "Najlepszy sposób na wytresowanie wilkora"
         }
       ]
     },
     {
-      "questionText": "What does Bran Stark repeatedly dream of?",
+      "questionText": "O czym wielokrotnie śnił Bran Stark?",
       "options": [
         {
-          "text": "Direwolves"
+          "text": "O wilkorach"
         },
         {
-          "text": "A three-eyed raven",
+          "text": "Trójokiej wronie",
           "correct": true
         },
         {
-          "text": "White Walkers"
+          "text": "O Białych Wędrowcach"
         },
         {
-          "text": "The Stark family crypt"
+          "text": "O krypcie rodziny Starków"
         }
       ]
     }
