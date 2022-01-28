@@ -23,14 +23,11 @@ ol {
 button.btn i{
  color: var(--bs-gray-900);
 }
-.correct {
-  background-color: green;
+.correct,.incorrect  {
+  background-color: var(--bs-gray-900);
   color: #fff;
 }
-.incorrect {
-  background-color: red;
-  color: #fff;
-}
+
 .btn:focus{
   box-shadow: none;
 }

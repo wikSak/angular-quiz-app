@@ -19,7 +19,11 @@
   "result": {
     "good":"Nice job",
     "bad": "Try again",
-    "medium": "It could be better"
+    "medium": "It could be better",
+    "show": "Show answers",
+    "chosenAnswer": "Chosen answer:",
+    "correctAnswer": "Correct answer:",
+    "noAnswer": "No answer"
   },
   "questions": [
     {

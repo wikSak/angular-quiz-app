@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { AnswersComponent } from './answers/answers.component';
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -18,7 +19,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     AppComponent,
     WelcomeComponent,
     QuestionComponent,
-    HeaderComponent
+    HeaderComponent,
+    AnswersComponent
   ],
   imports: [
     BrowserModule,

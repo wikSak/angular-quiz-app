@@ -22,7 +22,7 @@
       <div class="options">
         <ol #selected >
           <li (click)="chooseAnswer(option)" *ngFor="let option of questionList[currentQuestion]?.options; let i = index">
-            <div appChangeBg (click)="answer(option.correct,$event)" class="card">
+            <div appChangeBg (click)="answer(option.correct,$event, i)" class="card">
               {{'questions.' + currentQuestion + '.options.' + i + '.text'| translate}}
             </div>
           </li>
@@ -44,6 +44,7 @@
           <p>{{'quiz.incorrect' | translate}} {{incorrectAnswer}}</p>
           <h1>{{resultText| translate}}</h1>
         </div>
+        <button class="btn btn-primary btn-lg" routerLink="/answers">{{'result.show' | translate}}</button>
       </div>
     </ng-container>
   </div>

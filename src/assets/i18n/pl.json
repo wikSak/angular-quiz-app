@@ -19,7 +19,11 @@
   "result": {
     "good":"Dobra robota",
     "bad": "Spróbuj jeszcze raz",
-    "medium": "Mogło być lepiej"
+    "medium": "Mogło być lepiej",
+    "show": "Pokaż odpowiedzi",
+    "chosenAnswer": "Wybrana odpowiedź:",
+    "correctAnswer": "Poprawna odpowiedź:",
+    "noAnswer": "Brak odpowiedzi"
   },
   "questions": [
     {

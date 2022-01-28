@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div *ngFor="let question; let i = index; of questionList; ">
+    <div class="card">
+     <h3>{{'questions.' + i + '.questionText'| translate}}</h3>
+    </div>
+    <div>
+      {{'result.chosenAnswer' | translate}}
+
+      <p *ngIf="answers[i]">{{'questions.' + i + '.options.' + answers[i] + '.text' | translate}}</p>
+      <p *ngIf="!answers[i]">{{'result.noAnswer' | translate}}</p>
+
+      {{'result.correctAnswer' | translate}}
+
+      <div *ngFor="let answer; let ii = index; of question.options" >
+
+        <p *ngIf="answer.correct">{{ 'questions.' + i + '.options.' + ii + '.text' | translate}} </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>

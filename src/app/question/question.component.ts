@@ -17,11 +17,11 @@ export class QuestionComponent implements OnInit {
   progress:string="0";
   flag:boolean = false;
   isQuizFinished : boolean = false;
-  @ViewChild('selected') choosen:any;
-  @ViewChild('selectedOption') choosenOption:any;
+  @ViewChild('selected') chosen:any;
+  @ViewChild('selectedOption') chosenOption:any;
 
   constructor(private questionService:
-  QuestionService, public translate: TranslateService) {}
+  QuestionService, public translate: TranslateService ) {}
 
   ngOnInit(): void {
     this.getAllQuestions();
@@ -52,7 +52,7 @@ export class QuestionComponent implements OnInit {
     }
     this.flag = false;
     this.getProgress();
-    this.choosen.nativeElement.classList.remove('click-disabled');
+    this.chosen.nativeElement.classList.remove('click-disabled');
 
   }
 result() {
@@ -72,20 +72,20 @@ result() {
       this.incorrectAnswer++;
     }
     this.flag = true;
-   this.choosen.nativeElement.classList.add('click-disabled');
+   this.chosen.nativeElement.classList.add('click-disabled');
   }
   getProgress() {
     this.progress = ((this.currentQuestion/this.questionList.length)*100).toString();
     return this.progress;
   }
-  answer(correct:boolean,e:any){
+  answer(correct:boolean,e:any, i:number){
     e = e.target;
     if(correct){
       e.classList.add('correct');
     } else {
       e.classList.add('incorrect');
     }
-
+    this.questionService.addAnswers(this.currentQuestion, i);
   }
 
 }
