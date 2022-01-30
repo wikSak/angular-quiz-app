@@ -1,23 +1,23 @@
 <div class="container mt-5">
   <div class="card">
-    <div class="d-flex justify-content-around p-3 ">
+    <!-- <div class="d-flex justify-content-around ">
       <div class="quiz-header">
-        <h4>{{'quiz.header' | translate}}</h4>
+        <h1>{{'quiz.header' | translate}}</h1>
       </div>
-    </div>
+    </div> -->
     <ng-container *ngIf="!isQuizFinished">
       <div class="d-flex justify-content-around py-3">
         <div class="question-remain">
           <span>{{'question.text' | translate}} {{currentQuestion + 1}} {{'question.of' | translate}} {{questionList.length}}</span>
         </div>
       </div>
-      <div class="progress mb-3" style="height: 20px;">
-        <div class="progress-bar" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
       <div class="question">
         <div class="card">
           <h3>{{'questions.' + currentQuestion + '.questionText' | translate}}</h3>
         </div>
+      </div>
+      <div class="progress mb-3" style="height: 20px;">
+        <div class="progress-bar" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
       <div class="options">
         <ol #selected >
@@ -36,15 +36,15 @@
 
     </ng-container>
     <ng-container *ngIf="isQuizFinished">
-      <div class="row d-flex justify-content-between">
-        <img style="width: 40%; height: auto" class="img-fluid col-sm-12 mx-auto" src="https://ltcondon.github.io/GOT-Battle-Royale/assets/images/game-of-thrones-logo-large.png" alt="">
+      <div class="result-wrapper row d-flex justify-content-between">
+        <img style="width: 40%; height: auto" class="img-fluid col-sm-12 mx-auto" src="../../assets/dragon.svg" alt="">
         <div class="result text-center col-md-6 col-sm-12">
-          <h3>{{'quiz.result' | translate}}</h3>
+          <h2>{{'quiz.result' | translate}}</h2>
           <p>{{'quiz.correct' | translate}} {{correctAnswer}}</p>
           <p>{{'quiz.incorrect' | translate}} {{incorrectAnswer}}</p>
-          <h1>{{resultText| translate}}</h1>
+          <h2>{{resultText| translate}}</h2>
         </div>
-        <button class="btn btn-primary btn-lg" routerLink="/answers">{{'result.show' | translate}}</button>
+        <button class="btn btn-lg" routerLink="/answers">{{'result.show' | translate}}</button>
       </div>
     </ng-container>
   </div>

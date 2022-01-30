@@ -1,13 +1,14 @@
 {
   "quiz": {
+    "nav": "Game of Thrones",
     "header": "Game of Thrones quiz!",
     "result": "Your result:",
     "correct": "Correct answers:",
     "incorrect": "Incorrect answers:",
-    "welcome": "Welcome to Quiz",
+    "welcome": "Welcome to the Quiz",
     "description": "This quiz will contain questions about Game of Thrones.",
     "rules": "Rules:",
-    "ruleOne": "You must answer question before moving on to the next one.",
+    "ruleOne": "You must answer the question before moving on to the next one.",
     "ruleTwo": "You can choose only one answer.",
     "ruleThree": "Refreshing the page will reset the quiz",
     "start": "Start the Quiz"
@@ -18,8 +19,8 @@
   },
   "result": {
     "good":"Nice job",
-    "bad": "Try again",
-    "medium": "It could be better",
+    "bad": "It could be better",
+    "medium": "Good but not the best",
     "show": "Show answers",
     "chosenAnswer": "Chosen answer:",
     "correctAnswer": "Correct answer:",
@@ -66,17 +67,17 @@
       "questionText": "Jamie Lannister has a golden ___.",
       "options": [
         {
-          "text": "shield"
+          "text": "Shield"
         },
         {
-          "text": "hand",
+          "text": "Hand",
           "correct": true
         },
         {
-          "text": "leg"
+          "text": "Leg"
         },
         {
-          "text": "walking stick"
+          "text": "Walking stick"
         }
       ]
     },
@@ -94,7 +95,7 @@
           "correct": true
         },
         {
-          "text": "an unnamed prostitute"
+          "text": "An unnamed prostitute"
         }
       ]
     },

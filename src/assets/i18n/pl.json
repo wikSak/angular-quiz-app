@@ -1,4 +1,5 @@
 { "quiz": {
+  "nav": "Gra o Tron",
   "header": "Quiz o Grze o Tron!",
   "result": "Twój wynik:",
   "correct": "Prawidłowe odpowiedzi:",
@@ -18,8 +19,8 @@
   },
   "result": {
     "good":"Dobra robota",
-    "bad": "Spróbuj jeszcze raz",
-    "medium": "Mogło być lepiej",
+    "bad": "Mogło być lepiej",
+    "medium": "Dobrze, ale nie najlepiej",
     "show": "Pokaż odpowiedzi",
     "chosenAnswer": "Wybrana odpowiedź:",
     "correctAnswer": "Poprawna odpowiedź:",
@@ -66,17 +67,17 @@
       "questionText": "Jamie Lannister ma złotą ___.",
       "options": [
         {
-          "text": "tarczę"
+          "text": "Tarczę"
         },
         {
-          "text": "rękę",
+          "text": "Rękę",
           "correct": true
         },
         {
-          "text": "nogę"
+          "text": "Nogę"
         },
         {
-          "text": "laskę"
+          "text": "Laskę"
         }
       ]
     },

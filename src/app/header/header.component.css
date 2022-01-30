@@ -1,3 +1,27 @@
 .navbar {
   background-color: var(--bs-gray-900);
 }
+select {
+  width: 70px;
+  text-transform: uppercase;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 20px;
+  background-color: var(--bs-gray-900);
+  color: #ddd;
+  background: url('../../assets/arrow.svg') no-repeat;
+  background-size: 10px;
+  background-position: 80% 55%;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+}
+select:focus-visible{
+outline: none;
+}
+a {
+  color: #fff;
+}
+a > img {
+  margin-right: 10px;
+}
